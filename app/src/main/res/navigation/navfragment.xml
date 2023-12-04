@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navfragment"
+    app:startDestination="@id/user">
+
+    <fragment
+        android:id="@+id/user"
+        android:name="com.example.login.User"
+        android:label="User" >
+        <action
+            android:id="@+id/action_user_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="home"
+        android:label="home" />
+</navigation>
